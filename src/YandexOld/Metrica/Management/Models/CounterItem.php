@@ -34,8 +34,8 @@ class CounterItem extends Model
     protected $mirrors = null;
 
     protected $mappingClasses = [
-        'webvisor' => 'Yandex\Metrica\Management\Models\Webvisor',
-        'codeOptions' => 'Yandex\Metrica\Management\Models\CodeOptions'
+        'webvisor' => 'YandexOld\Metrica\Management\Models\Webvisor',
+        'codeOptions' => 'YandexOld\Metrica\Management\Models\CodeOptions'
     ];
 
     protected $propNameMap = [

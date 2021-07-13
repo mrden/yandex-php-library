@@ -31,7 +31,7 @@ class Delta extends Model
     ];
 
     protected $mappingClasses = [
-        'changes' => 'Yandex\DataSync\Models\Database\Delta\Records',
+        'changes' => 'YandexOld\DataSync\Models\Database\Delta\Records',
     ];
 
     /**

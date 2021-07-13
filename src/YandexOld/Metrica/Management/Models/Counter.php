@@ -49,9 +49,9 @@ class Counter extends Model
     protected $maxRetargetingGoals = null;
 
     protected $mappingClasses = [
-        'webvisor' => 'Yandex\Metrica\Management\Models\Webvisor',
-        'codeOptions' => 'Yandex\Metrica\Management\Models\CodeOptions',
-        'monitoring' => 'Yandex\Metrica\Management\Models\Monitoring'
+        'webvisor' => 'YandexOld\Metrica\Management\Models\Webvisor',
+        'codeOptions' => 'YandexOld\Metrica\Management\Models\CodeOptions',
+        'monitoring' => 'YandexOld\Metrica\Management\Models\Monitoring'
     ];
 
     protected $propNameMap = [

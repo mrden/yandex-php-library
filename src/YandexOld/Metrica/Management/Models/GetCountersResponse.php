@@ -13,7 +13,7 @@ class GetCountersResponse extends Model
     protected $rows = null;
 
     protected $mappingClasses = [
-        'counters' => 'Yandex\Metrica\Management\Models\Counters'
+        'counters' => 'YandexOld\Metrica\Management\Models\Counters'
     ];
 
     protected $propNameMap = [];

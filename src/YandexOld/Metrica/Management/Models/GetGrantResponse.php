@@ -11,7 +11,7 @@ class GetGrantResponse extends Model
     protected $grant = null;
 
     protected $mappingClasses = [
-        'grant' => 'Yandex\Metrica\Management\Models\Grant'
+        'grant' => 'YandexOld\Metrica\Management\Models\Grant'
     ];
 
     protected $propNameMap = [];

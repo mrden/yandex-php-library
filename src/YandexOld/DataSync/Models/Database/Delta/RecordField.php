@@ -32,7 +32,7 @@ class RecordField extends Model
     ];
 
     protected $mappingClasses = [
-        'value' => 'Yandex\DataSync\Models\Database\Delta\RecordFieldValue'
+        'value' => 'YandexOld\DataSync\Models\Database\Delta\RecordFieldValue'
     ];
 
     /**

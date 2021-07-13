@@ -32,8 +32,8 @@ class Record extends Model
     ];
 
     protected $mappingClasses = [
-        'changes' => 'Yandex\DataSync\Models\Database\Delta\RecordFields',
-        'fields'  => 'Yandex\DataSync\Models\Database\Delta\RecordFields',
+        'changes' => 'YandexOld\DataSync\Models\Database\Delta\RecordFields',
+        'fields'  => 'YandexOld\DataSync\Models\Database\Delta\RecordFields',
     ];
 
     /**

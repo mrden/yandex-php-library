@@ -34,8 +34,8 @@ class Ga extends Model
     protected $rows = null;
 
     protected $mappingClasses = [
-        'query' => 'Yandex\Metrica\Analytics\Models\Query',
-        'columnHeaders' => 'Yandex\Metrica\Analytics\Models\ColumnHeaders'
+        'query' => 'YandexOld\Metrica\Analytics\Models\Query',
+        'columnHeaders' => 'YandexOld\Metrica\Analytics\Models\ColumnHeaders'
     ];
 
     protected $propNameMap = [];

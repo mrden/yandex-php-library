@@ -32,8 +32,8 @@ class DrillDown extends Model
     protected $data = null;
 
     protected $mappingClasses = [
-        'query' => 'Yandex\Metrica\Stat\Models\Query',
-        'data' => 'Yandex\Metrica\Stat\Models\DrillDownData'
+        'query' => 'YandexOld\Metrica\Stat\Models\Query',
+        'data' => 'YandexOld\Metrica\Stat\Models\DrillDownData'
     ];
 
     protected $propNameMap = [

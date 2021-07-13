@@ -24,7 +24,7 @@ class DatabaseSnapshotResponse extends Model
     ];
 
     protected $mappingClasses = [
-        'records' => 'Yandex\DataSync\Models\DatabaseSnapshotRecords',
+        'records' => 'YandexOld\DataSync\Models\DatabaseSnapshotRecords',
     ];
 
     /**

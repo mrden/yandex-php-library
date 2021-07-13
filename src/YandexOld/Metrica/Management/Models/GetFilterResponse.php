@@ -11,7 +11,7 @@ class GetFilterResponse extends Model
     protected $filter = null;
 
     protected $mappingClasses = [
-        'filter' => 'Yandex\Metrica\Management\Models\Filter'
+        'filter' => 'YandexOld\Metrica\Management\Models\Filter'
     ];
 
     protected $propNameMap = [];

@@ -15,7 +15,7 @@ class DrillDownItems extends Model
     protected $expand = null;
 
     protected $mappingClasses = [
-        'dimension' => 'Yandex\Metrica\Stat\Models\Dimension'
+        'dimension' => 'YandexOld\Metrica\Stat\Models\Dimension'
     ];
 
     protected $propNameMap = [];

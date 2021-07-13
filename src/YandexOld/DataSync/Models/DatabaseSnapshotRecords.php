@@ -23,7 +23,7 @@ use YandexOld\DataSync\Models\Database\Delta\Records;
 class DatabaseSnapshotRecords extends Model
 {
     protected $mappingClasses = [
-        'items' => 'Yandex\DataSync\Models\Database\Delta\Records',
+        'items' => 'YandexOld\DataSync\Models\Database\Delta\Records',
     ];
 
     protected $items;

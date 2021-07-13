@@ -11,7 +11,7 @@ class GetOperationsResponse extends Model
     protected $operations = null;
 
     protected $mappingClasses = [
-        'operations' => 'Yandex\Metrica\Management\Models\Operations'
+        'operations' => 'YandexOld\Metrica\Management\Models\Operations'
     ];
 
     protected $propNameMap = [];

@@ -21,7 +21,7 @@ class Goal extends Model
     protected $conditions = null;
 
     protected $mappingClasses = [
-        'conditions' => 'Yandex\Metrica\Management\Models\Conditions'
+        'conditions' => 'YandexOld\Metrica\Management\Models\Conditions'
     ];
 
     protected $propNameMap = [];

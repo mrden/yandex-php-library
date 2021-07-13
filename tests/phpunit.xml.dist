@@ -6,22 +6,22 @@
          bootstrap="./bootstrap.php">
     <testsuites>
         <testsuite name="Library Test Suite">
-            <directory>./Yandex/Tests/Common</directory>
-            <directory>./Yandex/Tests/Metrica</directory>
-            <directory>./Yandex/Tests/Market/Partner</directory>
-            <directory>./Yandex/Tests/Market/Content</directory>
-            <directory>./Yandex/Tests/OAuth</directory>
-            <directory>./Yandex/Tests/Disk</directory>
-            <directory>./Yandex/Tests/Speller</directory>
-            <directory>./Yandex/Tests/Passport</directory>
-            <directory>./Yandex/Tests/DataSync</directory>
-            <directory>./Yandex/Tests/SiteSearchPinger</directory>
-            <directory>./Yandex/Tests/SafeBrowsing</directory>
-            <directory>./Yandex/Tests/Dictionary</directory>
+            <directory>./YandexOld/Tests/Common</directory>
+            <directory>./YandexOld/Tests/Metrica</directory>
+            <directory>./YandexOld/Tests/Market/Partner</directory>
+            <directory>./YandexOld/Tests/Market/Content</directory>
+            <directory>./YandexOld/Tests/OAuth</directory>
+            <directory>./YandexOld/Tests/Disk</directory>
+            <directory>./YandexOld/Tests/Speller</directory>
+            <directory>./YandexOld/Tests/Passport</directory>
+            <directory>./YandexOld/Tests/DataSync</directory>
+            <directory>./YandexOld/Tests/SiteSearchPinger</directory>
+            <directory>./YandexOld/Tests/SafeBrowsing</directory>
+            <directory>./YandexOld/Tests/Dictionary</directory>
         </testsuite>
     </testsuites>
     <listeners>
-        <listener class="\Yandex\Tests\TestListener" />
+        <listener class="\YandexOld\Tests\TestListener" />
     </listeners>
     <filter>
         <whitelist>

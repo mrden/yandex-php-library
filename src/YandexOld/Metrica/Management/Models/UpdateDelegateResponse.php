@@ -11,7 +11,7 @@ class UpdateDelegateResponse extends Model
     protected $delegates = null;
 
     protected $mappingClasses = [
-        'delegates' => 'Yandex\Metrica\Management\Models\Delegates'
+        'delegates' => 'YandexOld\Metrica\Management\Models\Delegates'
     ];
 
     protected $propNameMap = [];

@@ -29,9 +29,9 @@ class Comparison extends Model
     protected $totals = null;
 
     protected $mappingClasses = [
-        'query' => 'Yandex\Metrica\Stat\Models\ComparisonQuery',
-        'data' => 'Yandex\Metrica\Stat\Models\ComparisonData',
-        'totals' => 'Yandex\Metrica\Stat\Models\ComparisonTotals'
+        'query' => 'YandexOld\Metrica\Stat\Models\ComparisonQuery',
+        'data' => 'YandexOld\Metrica\Stat\Models\ComparisonData',
+        'totals' => 'YandexOld\Metrica\Stat\Models\ComparisonTotals'
     ];
 
     protected $propNameMap = [

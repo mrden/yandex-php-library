@@ -23,7 +23,7 @@ class DatabaseDeltasResponse extends Model
     ];
 
     protected $mappingClasses = [
-        'items' => 'Yandex\DataSync\Models\Database\Deltas',
+        'items' => 'YandexOld\DataSync\Models\Database\Deltas',
     ];
 
     /**

@@ -13,7 +13,7 @@ class Items extends Model
     protected $metrics = null;
 
     protected $mappingClasses = [
-        'dimensions' => 'Yandex\Metrica\Stat\Models\Dimensions'
+        'dimensions' => 'YandexOld\Metrica\Stat\Models\Dimensions'
     ];
 
     protected $propNameMap = [];

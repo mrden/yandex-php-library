@@ -11,7 +11,7 @@ class AddGoalResponse extends Model
     protected $goal = null;
 
     protected $mappingClasses = [
-        'goal' => 'Yandex\Metrica\Management\Models\Goal'
+        'goal' => 'YandexOld\Metrica\Management\Models\Goal'
     ];
 
     protected $propNameMap = [];

@@ -26,7 +26,7 @@ class DatabasesResponse extends Model
     protected $offset = null;
 
     protected $mappingClasses = [
-        'items' => 'Yandex\DataSync\Models\Databases',
+        'items' => 'YandexOld\DataSync\Models\Databases',
     ];
 
     /**

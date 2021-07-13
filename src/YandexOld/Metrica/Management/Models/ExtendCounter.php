@@ -63,13 +63,13 @@ class ExtendCounter extends Model
     protected $lang = null;
 
     protected $mappingClasses = [
-        'webvisor' => 'Yandex\Metrica\Management\Models\Webvisor',
-        'codeOptions' => 'Yandex\Metrica\Management\Models\CodeOptions',
-        'goals' => 'Yandex\Metrica\Management\Models\Goals',
-        'filters' => 'Yandex\Metrica\Management\Models\Filters',
-        'operations' => 'Yandex\Metrica\Management\Models\Operations',
-        'grants' => 'Yandex\Metrica\Management\Models\Grants',
-        'monitoring' => 'Yandex\Metrica\Management\Models\Monitoring'
+        'webvisor' => 'YandexOld\Metrica\Management\Models\Webvisor',
+        'codeOptions' => 'YandexOld\Metrica\Management\Models\CodeOptions',
+        'goals' => 'YandexOld\Metrica\Management\Models\Goals',
+        'filters' => 'YandexOld\Metrica\Management\Models\Filters',
+        'operations' => 'YandexOld\Metrica\Management\Models\Operations',
+        'grants' => 'YandexOld\Metrica\Management\Models\Grants',
+        'monitoring' => 'YandexOld\Metrica\Management\Models\Monitoring'
     ];
 
     protected $propNameMap = [

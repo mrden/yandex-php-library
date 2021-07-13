@@ -23,7 +23,7 @@ class CodeOptions extends Model
     protected $inOneLine = null;
 
     protected $mappingClasses = [
-        'informer' => 'Yandex\Metrica\Management\Models\Informer'
+        'informer' => 'YandexOld\Metrica\Management\Models\Informer'
     ];
 
     protected $propNameMap = [
