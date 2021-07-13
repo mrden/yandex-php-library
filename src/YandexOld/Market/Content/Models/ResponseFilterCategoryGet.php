@@ -9,7 +9,7 @@ class ResponseFilterCategoryGet extends PagedModel
     protected $regionDelimiterPosition = null;
 
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\SearchResults'
+        'items' => 'YandexOld\Market\Content\Models\SearchResults'
     ];
 
     protected $propNameMap = [

@@ -11,7 +11,7 @@ class ResponseModelMatchGet extends Model
     protected $models = null;
 
     protected $mappingClasses = [
-        'models' => 'Yandex\Market\Content\Models\Base\Models'
+        'models' => 'YandexOld\Market\Content\Models\Base\Models'
     ];
 
     protected $propNameMap = [

@@ -9,7 +9,7 @@ class ResponseOfferGet extends Model
     protected $offer = null;
 
     protected $mappingClasses = [
-        'offer' => 'Yandex\Market\Content\Models\Offer'
+        'offer' => 'YandexOld\Market\Content\Models\Offer'
     ];
 
     /**

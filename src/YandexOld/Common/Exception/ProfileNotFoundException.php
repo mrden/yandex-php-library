@@ -14,7 +14,7 @@ namespace YandexOld\Common\Exception;
 /**
  * ProfileNotFoundException Exception
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  *
  * @author   Alexander Khaylo <naxel@land.ru>
  * @created  22.11.13 16:30

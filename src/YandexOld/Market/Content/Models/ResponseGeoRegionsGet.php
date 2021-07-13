@@ -7,7 +7,7 @@ use YandexOld\Market\Content\Models\Base\PagedModel;
 class ResponseGeoRegionsGet extends PagedModel
 {
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\GeoRegions'
+        'items' => 'YandexOld\Market\Content\Models\GeoRegions'
     ];
 
     /**

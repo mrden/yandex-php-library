@@ -26,8 +26,8 @@ class Vendor extends Model
     protected $topCategories = null;
 
     protected $mappingClasses = [
-        'categories' => 'Yandex\Market\Content\Models\Categories',
-        'topCategories' => 'Yandex\Market\Content\Models\Categories'
+        'categories' => 'YandexOld\Market\Content\Models\Categories',
+        'topCategories' => 'YandexOld\Market\Content\Models\Categories'
     ];
 
     protected $propNameMap = [

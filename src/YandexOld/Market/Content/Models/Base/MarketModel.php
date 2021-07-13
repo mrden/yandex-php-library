@@ -12,7 +12,7 @@ use YandexOld\Market\Content\Models\ModelInfo;
 /**
  * Class MarketModel
  *
- * @package Yandex\Market\Content\Models\Base
+ * @package YandexOld\Market\Content\Models\Base
  *
  * @author  Oleg Scherbakov <holdmann@yandex.ru>
  * @created 03.01.16 04:23
@@ -85,21 +85,21 @@ class MarketModel extends Model
     public static function getInstanceClassName($data = array())
     {
         if (isset($data['children'])|| isset($data['modificationsCount'])) {
-            return 'Yandex\Market\Content\Models\ModelParent';
+            return 'YandexOld\Market\Content\Models\ModelParent';
         }
 
         if (isset($data['parentModel'])) {
-            return 'Yandex\Market\Content\Models\ModelChild';
+            return 'YandexOld\Market\Content\Models\ModelChild';
         }
 
         if (isset($data['offers'])) {
-            return 'Yandex\Market\Content\Models\ModelVisual';
+            return 'YandexOld\Market\Content\Models\ModelVisual';
         }
 
         if (isset($data['offerCount']) || isset($data['type'])) {
-            return 'Yandex\Market\Content\Models\ModelInfo';
+            return 'YandexOld\Market\Content\Models\ModelInfo';
         }
 
-        return 'Yandex\Market\Content\Models\ModelSingle';
+        return 'YandexOld\Market\Content\Models\ModelSingle';
     }
 }

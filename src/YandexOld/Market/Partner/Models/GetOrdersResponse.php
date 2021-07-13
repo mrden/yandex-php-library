@@ -14,8 +14,8 @@ class GetOrdersResponse extends Model
     protected $orders = null;
 
     protected $mappingClasses = [
-        'pager' => 'Yandex\Market\Partner\Models\Pager',
-        'orders' => 'Yandex\Market\Partner\Models\Orders'
+        'pager' => 'YandexOld\Market\Partner\Models\Pager',
+        'orders' => 'YandexOld\Market\Partner\Models\Orders'
     ];
 
     protected $propNameMap = [];

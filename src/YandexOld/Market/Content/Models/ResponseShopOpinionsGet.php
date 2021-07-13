@@ -7,7 +7,7 @@ use YandexOld\Market\Content\Models\Base\PagedModel;
 class ResponseShopOpinionsGet extends PagedModel
 {
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\ShopOpinions'
+        'items' => 'YandexOld\Market\Content\Models\ShopOpinions'
     ];
 
     protected $propNameMap = [

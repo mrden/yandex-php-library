@@ -52,11 +52,11 @@ class ModelChild extends MarketModel
     protected $popularity = null;
 
     protected $mappingClasses = [
-        'photos' => 'Yandex\Market\Content\Models\Photos',
-        'prices' => 'Yandex\Market\Content\Models\Prices',
-        'facts' => 'Yandex\Market\Content\Models\Facts',
-        'mainPhoto' => 'Yandex\Market\Content\Models\Base\Photo',
-        'parent' => 'Yandex\Market\Content\Models\ModelParent'
+        'photos' => 'YandexOld\Market\Content\Models\Photos',
+        'prices' => 'YandexOld\Market\Content\Models\Prices',
+        'facts' => 'YandexOld\Market\Content\Models\Facts',
+        'mainPhoto' => 'YandexOld\Market\Content\Models\Base\Photo',
+        'parent' => 'YandexOld\Market\Content\Models\ModelParent'
     ];
 
     protected $propNameMap = [

@@ -33,8 +33,8 @@ class Comment extends Model
     protected $children = null;
 
     protected $mappingClasses = [
-        'user' => 'Yandex\Market\Content\Models\User',
-        'children' => 'Yandex\Market\Content\Models\Comments'
+        'user' => 'YandexOld\Market\Content\Models\User',
+        'children' => 'YandexOld\Market\Content\Models\Comments'
     ];
 
     protected $propNameMap = [

@@ -55,16 +55,16 @@ class Offer extends Model
     protected $filters = null;
 
     protected $mappingClasses = [
-        'shopInfo' => 'Yandex\Market\Content\Models\ShopInfo',
-        'photos' => 'Yandex\Market\Content\Models\OfferPhotos',
-        'previewPhotos' => 'Yandex\Market\Content\Models\OfferPhotos',
-        'bigPhoto' => 'Yandex\Market\Content\Models\OfferPhoto',
-        'price' => 'Yandex\Market\Content\Models\Base\Price',
-        'phone' => 'Yandex\Market\Content\Models\Phone',
-        'delivery' => 'Yandex\Market\Content\Models\Delivery',
-        'outlet' => 'Yandex\Market\Content\Models\Outlet',
-        'filters' => 'Yandex\Market\Content\Models\Filters',
-        'vendor' =>  'Yandex\Market\Content\Models\Vendor'
+        'shopInfo' => 'YandexOld\Market\Content\Models\ShopInfo',
+        'photos' => 'YandexOld\Market\Content\Models\OfferPhotos',
+        'previewPhotos' => 'YandexOld\Market\Content\Models\OfferPhotos',
+        'bigPhoto' => 'YandexOld\Market\Content\Models\OfferPhoto',
+        'price' => 'YandexOld\Market\Content\Models\Base\Price',
+        'phone' => 'YandexOld\Market\Content\Models\Phone',
+        'delivery' => 'YandexOld\Market\Content\Models\Delivery',
+        'outlet' => 'YandexOld\Market\Content\Models\Outlet',
+        'filters' => 'YandexOld\Market\Content\Models\Filters',
+        'vendor' =>  'YandexOld\Market\Content\Models\Vendor'
     ];
 
     protected $propNameMap = [

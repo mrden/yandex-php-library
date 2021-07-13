@@ -16,7 +16,7 @@ class Region extends Model
     protected $parent = null;
 
     protected $mappingClasses = [
-        'parent' => 'Yandex\Market\Partner\Models\Region'
+        'parent' => 'YandexOld\Market\Partner\Models\Region'
     ];
 
     protected $propNameMap = [];

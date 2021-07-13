@@ -14,7 +14,7 @@ namespace YandexOld\Market\Content\Exception;
 /**
  * Class ContentRequestException
  *
- * @package Yandex\Market\Content\Exception
+ * @package YandexOld\Market\Content\Exception
  *
  * @author  Oleg Scherbakov <holdmann@yandex.ru>
  * @created 04.11.13 18:46

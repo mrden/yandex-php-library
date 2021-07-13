@@ -37,8 +37,8 @@ class Delivery extends Model
     protected $brief = null;
 
     protected $mappingClasses = [
-        'price' => 'Yandex\Market\Content\Models\Base\Price',
-        'methods' => 'Yandex\Market\Content\Models\DeliveryMethods',
+        'price' => 'YandexOld\Market\Content\Models\Base\Price',
+        'methods' => 'YandexOld\Market\Content\Models\DeliveryMethods',
     ];
 
     protected $propNameMap = [

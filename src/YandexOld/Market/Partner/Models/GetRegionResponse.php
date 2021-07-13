@@ -9,7 +9,7 @@ class GetRegionResponse extends Model
     protected $region = null;
 
     protected $mappingClasses = [
-        'region' => 'Yandex\Market\Partner\Models\Region'
+        'region' => 'YandexOld\Market\Partner\Models\Region'
     ];
 
     protected $propNameMap = [];

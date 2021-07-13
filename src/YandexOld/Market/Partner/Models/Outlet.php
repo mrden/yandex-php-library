@@ -10,10 +10,10 @@ class Outlet extends Model
     protected $id = null;
 
     protected $mappingClasses = [
-        'address' => 'Yandex\Market\Partner\Models\AddressOutlet',
-        'deliveryRules' => 'Yandex\Market\Partner\Models\DeliveryRules',
-        'emails' => 'Yandex\Common\StringCollection',
-        'phones' => 'Yandex\Common\StringCollection'
+        'address' => 'YandexOld\Market\Partner\Models\AddressOutlet',
+        'deliveryRules' => 'YandexOld\Market\Partner\Models\DeliveryRules',
+        'emails' => 'YandexOld\Common\StringCollection',
+        'phones' => 'YandexOld\Common\StringCollection'
     ];
 
     protected $propNameMap = [];

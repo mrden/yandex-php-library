@@ -29,12 +29,12 @@ class ModelInfo extends Model
     protected $facts = null;
 
     protected $mappingClasses = [
-        'category' => 'Yandex\Market\Content\Models\Category',
-        'prices' => 'Yandex\Market\Content\Models\Prices',
-        'vendor' => 'Yandex\Market\Content\Models\Vendor',
-        'rating' => 'Yandex\Market\Content\Models\Rating',
-        'media' => 'Yandex\Market\Content\Models\Media',
-        'facts' => 'Yandex\Market\Content\Models\Facts'
+        'category' => 'YandexOld\Market\Content\Models\Category',
+        'prices' => 'YandexOld\Market\Content\Models\Prices',
+        'vendor' => 'YandexOld\Market\Content\Models\Vendor',
+        'rating' => 'YandexOld\Market\Content\Models\Rating',
+        'media' => 'YandexOld\Market\Content\Models\Media',
+        'facts' => 'YandexOld\Market\Content\Models\Facts'
     ];
 
     protected $propNameMap = [

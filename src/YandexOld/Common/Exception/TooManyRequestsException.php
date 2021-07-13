@@ -14,7 +14,7 @@ namespace YandexOld\Common\Exception;
 /**
  * Too Many Requests Exception
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  */
 class TooManyRequestsException extends YandexException
 {

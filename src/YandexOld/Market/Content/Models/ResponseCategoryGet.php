@@ -9,7 +9,7 @@ class ResponseCategoryGet extends Model
     protected $category = null;
 
     protected $mappingClasses = [
-        'category' => 'Yandex\Market\Content\Models\Category'
+        'category' => 'YandexOld\Market\Content\Models\Category'
     ];
 
     /**

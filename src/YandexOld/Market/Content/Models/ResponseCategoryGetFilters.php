@@ -9,7 +9,7 @@ class ResponseCategoryGetFilters extends Model
     protected $filters = null;
 
     protected $mappingClasses = [
-        'filters' => 'Yandex\Market\Content\Models\Filters'
+        'filters' => 'YandexOld\Market\Content\Models\Filters'
     ];
 
     /**

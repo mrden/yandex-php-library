@@ -39,9 +39,9 @@ class Order extends Model
     protected $buyer = null;
 
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Partner\Models\Items',
-        'delivery' => 'Yandex\Market\Partner\Models\Delivery',
-        'buyer' => 'Yandex\Market\Partner\Models\Buyer'
+        'items' => 'YandexOld\Market\Partner\Models\Items',
+        'delivery' => 'YandexOld\Market\Partner\Models\Delivery',
+        'buyer' => 'YandexOld\Market\Partner\Models\Buyer'
     ];
 
     protected $propNameMap = [];

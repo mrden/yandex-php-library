@@ -14,7 +14,7 @@ namespace YandexOld\Common\Exception;
 /**
  * MissedArgument Exception
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  *
  * @author   Alexander Khaylo <naxel@land.ru>
  * @created  21.11.13 17:52

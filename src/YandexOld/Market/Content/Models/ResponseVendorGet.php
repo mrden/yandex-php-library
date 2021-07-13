@@ -11,7 +11,7 @@ class ResponseVendorGet extends Model
     protected $vendor = null;
 
     protected $mappingClasses = [
-        'vendor' => 'Yandex\Market\Content\Models\Vendor'
+        'vendor' => 'YandexOld\Market\Content\Models\Vendor'
     ];
 
     /**

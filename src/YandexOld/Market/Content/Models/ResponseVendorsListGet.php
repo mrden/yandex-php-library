@@ -7,7 +7,7 @@ use YandexOld\Market\Content\Models\Base\PagedModel;
 class ResponseVendorsListGet extends PagedModel
 {
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\Vendors'
+        'items' => 'YandexOld\Market\Content\Models\Vendors'
     ];
 
     protected $propNameMap = [

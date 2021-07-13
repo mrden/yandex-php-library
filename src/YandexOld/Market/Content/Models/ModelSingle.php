@@ -52,12 +52,12 @@ class ModelSingle extends MarketModel
     protected $previewPhoto = null;
 
     protected $mappingClasses = [
-        'photos' => 'Yandex\Market\Content\Models\Photos',
-        'prices' => 'Yandex\Market\Content\Models\Prices',
-        'facts' => 'Yandex\Market\Content\Models\Facts',
-        'mainPhoto' => 'Yandex\Market\Content\Models\Base\Photo',
-        'bigPhoto' => 'Yandex\Market\Content\Models\Base\Photo',
-        'previewPhoto' => 'Yandex\Market\Content\Models\Base\Photo'
+        'photos' => 'YandexOld\Market\Content\Models\Photos',
+        'prices' => 'YandexOld\Market\Content\Models\Prices',
+        'facts' => 'YandexOld\Market\Content\Models\Facts',
+        'mainPhoto' => 'YandexOld\Market\Content\Models\Base\Photo',
+        'bigPhoto' => 'YandexOld\Market\Content\Models\Base\Photo',
+        'previewPhoto' => 'YandexOld\Market\Content\Models\Base\Photo'
     ];
 
     protected $propNameMap = [

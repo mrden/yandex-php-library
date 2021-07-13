@@ -16,7 +16,7 @@ class GetSettingsResponse extends Model
     protected $settings = null;
 
     protected $mappingClasses = [
-        'settings' => 'Yandex\Market\Partner\Models\Settings'
+        'settings' => 'YandexOld\Market\Partner\Models\Settings'
     ];
 
     /**

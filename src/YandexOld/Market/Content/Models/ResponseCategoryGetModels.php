@@ -7,7 +7,7 @@ use YandexOld\Market\Content\Models\Base\PagedModel;
 class ResponseCategoryGetModels extends PagedModel
 {
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\Base\Models'
+        'items' => 'YandexOld\Market\Content\Models\Base\Models'
     ];
 
     /**

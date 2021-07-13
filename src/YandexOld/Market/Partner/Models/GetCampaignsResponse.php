@@ -11,7 +11,7 @@ class GetCampaignsResponse extends Model
     protected $campaigns = null;
 
     protected $mappingClasses = [
-        'campaigns' => 'Yandex\Market\Partner\Models\Campaigns'
+        'campaigns' => 'YandexOld\Market\Partner\Models\Campaigns'
     ];
 
     protected $propNameMap = [];

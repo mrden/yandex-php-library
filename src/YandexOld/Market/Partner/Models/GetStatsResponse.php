@@ -9,7 +9,7 @@ class GetStatsResponse extends Model
     protected $mainStats = null;
 
     protected $mappingClasses = [
-        'mainStats' => 'Yandex\Market\Partner\Models\Stats'
+        'mainStats' => 'YandexOld\Market\Partner\Models\Stats'
     ];
 
     protected $propNameMap = [];

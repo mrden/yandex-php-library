@@ -13,7 +13,7 @@ class GetBalanceResponse extends Model
     protected $balance = null;
 
     protected $mappingClasses = [
-        'balance' => 'Yandex\Market\Partner\Models\Balance'
+        'balance' => 'YandexOld\Market\Partner\Models\Balance'
     ];
 
     /**

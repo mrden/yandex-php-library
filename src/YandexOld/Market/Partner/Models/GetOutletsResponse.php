@@ -14,8 +14,8 @@ class GetOutletsResponse extends Model
     protected $outlets = null;
 
     protected $mappingClasses = [
-        'pager' => 'Yandex\Market\Partner\Models\Pager',
-        'outlets' => 'Yandex\Market\Partner\Models\Outlets'
+        'pager' => 'YandexOld\Market\Partner\Models\Pager',
+        'outlets' => 'YandexOld\Market\Partner\Models\Outlets'
     ];
 
     protected $propNameMap = [];

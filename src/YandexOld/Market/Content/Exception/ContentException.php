@@ -16,7 +16,7 @@ use YandexOld\Common\Exception\YandexException;
 /**
  * Class ContentException
  *
- * @package Yandex\Market\Content\Exception
+ * @package YandexOld\Market\Content\Exception
  *
  * @author  Oleg Scherbakov <holdmann@yandex.ru>
  * @created 27.12.15 18:45

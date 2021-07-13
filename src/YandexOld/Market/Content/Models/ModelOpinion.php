@@ -41,9 +41,9 @@ class ModelOpinion extends Model
     protected $qualityGrade = null;
 
     protected $mappingClasses = [
-        'authorInfo' => 'Yandex\Market\Content\Models\OpinionAuthorInfo',
-        'pro' => 'Yandex\Market\Content\Models\Fact',
-        'contra' => 'Yandex\Market\Content\Models\Fact'
+        'authorInfo' => 'YandexOld\Market\Content\Models\OpinionAuthorInfo',
+        'pro' => 'YandexOld\Market\Content\Models\Fact',
+        'contra' => 'YandexOld\Market\Content\Models\Fact'
     ];
 
     /**

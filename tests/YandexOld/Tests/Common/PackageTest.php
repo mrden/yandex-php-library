@@ -72,7 +72,7 @@ class PackageTest extends TestCase
     }
 
     /**
-     * @covers Yandex\Common\AbstractPackage::checkSettings
+     * @covers YandexOld\Common\AbstractPackage::checkSettings
      * @expectedException \YandexOld\Common\Exception\InvalidSettingsException
      */
     public function testCheckSettings()
@@ -89,7 +89,7 @@ class PackageTest extends TestCase
     }
 
     /**
-     * @covers Yandex\Common\AbstractPackage::__set
+     * @covers YandexOld\Common\AbstractPackage::__set
      * @expectedException \YandexOld\Common\Exception\RealizationException
      */
     public function testSetRealizationException()
@@ -98,7 +98,7 @@ class PackageTest extends TestCase
     }
 
     /**
-     * @covers Yandex\Common\AbstractPackage::__set
+     * @covers YandexOld\Common\AbstractPackage::__set
      * @expectedException \YandexOld\Common\Exception\InvalidSettingsException
      */
     public function testSetWrongKey()
@@ -107,7 +107,7 @@ class PackageTest extends TestCase
     }
 
     /**
-     * @covers Yandex\Common\AbstractPackage::__get
+     * @covers YandexOld\Common\AbstractPackage::__get
      * @expectedException \YandexOld\Common\Exception\RealizationException
      */
     public function testGetRealizationException()
@@ -116,7 +116,7 @@ class PackageTest extends TestCase
     }
 
     /**
-     * @covers Yandex\Common\AbstractPackage::__set
+     * @covers YandexOld\Common\AbstractPackage::__set
      * @expectedException \YandexOld\Common\Exception\InvalidSettingsException
      */
     public function testGetWrongKey()

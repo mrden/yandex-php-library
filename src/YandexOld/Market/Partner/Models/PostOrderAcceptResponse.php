@@ -11,7 +11,7 @@ class PostOrderAcceptResponse extends Model
     protected $order = null;
 
     protected $mappingClasses = [
-        'order' => 'Yandex\Market\Partner\Models\AcceptOrder'
+        'order' => 'YandexOld\Market\Partner\Models\AcceptOrder'
     ];
 
     protected $propNameMap = [];

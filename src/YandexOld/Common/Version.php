@@ -13,7 +13,7 @@ namespace YandexOld\Common;
 
 /**
  * Class Version
- * @package Yandex\Common
+ * @package YandexOld\Common
  */
 class Version
 {

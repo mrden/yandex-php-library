@@ -13,7 +13,7 @@ namespace YandexOld\Common;
 
 /**
  * Class Model
- * @package Yandex\Common
+ * @package YandexOld\Common
  */
 abstract class Model
 {

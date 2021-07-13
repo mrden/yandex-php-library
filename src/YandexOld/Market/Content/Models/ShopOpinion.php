@@ -43,11 +43,11 @@ class ShopOpinion extends Model
     protected $shop = null;
 
     protected $mappingClasses = [
-        'authorInfo' => 'Yandex\Market\Content\Models\OpinionAuthorInfo',
-        'comments' => 'Yandex\Market\Content\Models\Comments',
-        'pro' => 'Yandex\Market\Content\Models\Fact',
-        'contra' => 'Yandex\Market\Content\Models\Fact',
-        'shop' => 'Yandex\Market\Content\Models\Shop'
+        'authorInfo' => 'YandexOld\Market\Content\Models\OpinionAuthorInfo',
+        'comments' => 'YandexOld\Market\Content\Models\Comments',
+        'pro' => 'YandexOld\Market\Content\Models\Fact',
+        'contra' => 'YandexOld\Market\Content\Models\Fact',
+        'shop' => 'YandexOld\Market\Content\Models\Shop'
     ];
 
     /**

@@ -11,7 +11,7 @@ class UpdateOrderDeliveryResponse extends Model
     protected $order = null;
 
     protected $mappingClasses = [
-        'order' => 'Yandex\Market\Partner\Models\Order'
+        'order' => 'YandexOld\Market\Partner\Models\Order'
     ];
 
     protected $propNameMap = [];

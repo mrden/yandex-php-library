@@ -10,7 +10,7 @@ class GetOutletResponse extends Model
     protected $outlet = null;
 
     protected $mappingClasses = [
-        'outlet' => 'Yandex\Market\Partner\Models\Outlet'
+        'outlet' => 'YandexOld\Market\Partner\Models\Outlet'
     ];
 
     protected $propNameMap = [];

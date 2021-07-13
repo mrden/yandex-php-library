@@ -14,7 +14,7 @@ namespace YandexOld\Common\Exception;
 /**
  * Configuration Exception
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  *
  * @author   Anton Shevchuk
  * @created  26.06.13 13:56

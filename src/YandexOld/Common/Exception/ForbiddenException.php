@@ -14,7 +14,7 @@ namespace YandexOld\Common\Exception;
 /**
  * Forbidden Exception
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  *
  * @author   Alexander Khaylo <naxel@land.ru>
  * @created  25.11.13 19:16

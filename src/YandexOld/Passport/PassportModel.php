@@ -74,8 +74,8 @@ class PassportModel extends Model
      * @var array
      */
     protected $mappingClasses = [
-        'emails'            => 'Yandex\Common\StringCollection',
-        'openid_identities' => 'Yandex\Common\StringCollection'
+        'emails'            => 'YandexOld\Common\StringCollection',
+        'openid_identities' => 'YandexOld\Common\StringCollection'
     ];
 
     /**

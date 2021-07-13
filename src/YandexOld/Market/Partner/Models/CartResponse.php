@@ -16,8 +16,8 @@ class CartResponse extends Model
     protected $paymentMethods = null;
 
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Partner\Models\Items',
-        'deliveryOptions' => 'Yandex\Market\Partner\Models\DeliveryOptions'
+        'items' => 'YandexOld\Market\Partner\Models\Items',
+        'deliveryOptions' => 'YandexOld\Market\Partner\Models\DeliveryOptions'
     ];
 
     protected $propNameMap = [];

@@ -15,7 +15,7 @@ namespace YandexOld\Common\Exception;
  * Invalid Arguments Exception
  * should be implement InvalidArgumentException from SPL
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  *
  * @author   Anton Shevchuk
  * @created  08.08.13 10:49

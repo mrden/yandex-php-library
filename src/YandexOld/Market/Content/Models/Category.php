@@ -40,8 +40,8 @@ class Category extends Model
     protected $imageUrl = null;
 
     protected $mappingClasses = [
-        'vendors' => 'Yandex\Market\Content\Models\Vendors',
-        'children' => 'Yandex\Market\Content\Models\Categories'
+        'vendors' => 'YandexOld\Market\Content\Models\Vendors',
+        'children' => 'YandexOld\Market\Content\Models\Categories'
     ];
 
     protected $propNameMap = [

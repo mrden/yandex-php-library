@@ -14,7 +14,7 @@ namespace YandexOld\Common\Exception;
 /**
  * Unauthorized Exception
  *
- * @package  Yandex\Common\Exception
+ * @package  YandexOld\Common\Exception
  */
 class UnauthorizedException extends YandexException
 {

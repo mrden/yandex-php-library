@@ -14,7 +14,7 @@ namespace YandexOld\Market\Partner\Exception;
 /**
  * Class PartnerRequestException
  *
- * @package  Yandex\Market\Partner\Exception
+ * @package  YandexOld\Market\Partner\Exception
  *
  * @author   Alexander Khaylo <naxel@land.ru>
  * @created  04.11.13 12:48

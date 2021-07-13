@@ -23,8 +23,8 @@ class ResponseModelOffersGet extends PagedModel
     }
 
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\Offers',
-        'filters' => 'Yandex\Market\Content\Models\Filters'
+        'items' => 'YandexOld\Market\Content\Models\Offers',
+        'filters' => 'YandexOld\Market\Content\Models\Filters'
     ];
 
     /**

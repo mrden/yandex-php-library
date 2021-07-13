@@ -35,8 +35,8 @@ class Filter extends Model
     protected $enumFilterType = null;
 
     protected $mappingClasses = [
-        'property' => 'Yandex\Market\Content\Models\Property',
-        'options' => 'Yandex\Market\Content\Models\Options'
+        'property' => 'YandexOld\Market\Content\Models\Property',
+        'options' => 'YandexOld\Market\Content\Models\Options'
     ];
 
     protected $propNameMap = [

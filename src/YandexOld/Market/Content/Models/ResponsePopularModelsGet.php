@@ -9,7 +9,7 @@ class ResponsePopularModelsGet extends Model
     protected $categories = null;
 
     protected $mappingClasses = [
-        'categories' => 'Yandex\Market\Content\Models\Categories'
+        'categories' => 'YandexOld\Market\Content\Models\Categories'
     ];
 
     protected $propNameMap = [

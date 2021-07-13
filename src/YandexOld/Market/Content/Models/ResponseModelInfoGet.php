@@ -11,7 +11,7 @@ class ResponseModelInfoGet extends Model
     protected $model = null;
 
     protected $mappingClasses = [
-        'model' => 'Yandex\Market\Content\Models\ModelInfo'
+        'model' => 'YandexOld\Market\Content\Models\ModelInfo'
     ];
 
     /**

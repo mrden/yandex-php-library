@@ -22,7 +22,7 @@ use YandexOld\Common\Exception\YandexException;
 /**
  * Class AbstractServiceClient
  *
- * @package Yandex\Common
+ * @package YandexOld\Common
  *
  * @author   Eugene Zabolotniy <realbaziak@gmail.com>
  * @created  13.09.13 12:09

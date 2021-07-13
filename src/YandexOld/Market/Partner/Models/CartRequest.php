@@ -16,8 +16,8 @@ class CartRequest extends Model
     protected $delivery = null;
 
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Partner\Models\Items',
-        'delivery' => 'Yandex\Market\Partner\Models\Delivery'
+        'items' => 'YandexOld\Market\Partner\Models\Items',
+        'delivery' => 'YandexOld\Market\Partner\Models\Delivery'
     ];
 
     protected $propNameMap = [];

@@ -9,7 +9,7 @@ class ResponseShopGet extends Model
     protected $shop = null;
 
     protected $mappingClasses = [
-        'shop' => 'Yandex\Market\Content\Models\Shop'
+        'shop' => 'YandexOld\Market\Content\Models\Shop'
     ];
 
     /**

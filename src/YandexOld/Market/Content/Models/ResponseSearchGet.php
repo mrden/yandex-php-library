@@ -13,9 +13,9 @@ class ResponseSearchGet extends PagedModel
     protected $requestParams = null;
 
     protected $mappingClasses = [
-        'items' => 'Yandex\Market\Content\Models\SearchResults',
-        'categories' => 'Yandex\Market\Content\Models\Categories',
-        'requestParams' => 'Yandex\Market\Content\Models\SearchRequestParams'
+        'items' => 'YandexOld\Market\Content\Models\SearchResults',
+        'categories' => 'YandexOld\Market\Content\Models\Categories',
+        'requestParams' => 'YandexOld\Market\Content\Models\SearchRequestParams'
     ];
 
     protected $propNameMap = [

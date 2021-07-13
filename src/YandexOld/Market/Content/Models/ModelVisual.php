@@ -38,12 +38,12 @@ class ModelVisual extends MarketModel
     protected $childrenCount = null;
 
     protected $mappingClasses = [
-        'photos' => 'Yandex\Market\Content\Models\ModelVisualPhotos',
-        'prices' => 'Yandex\Market\Content\Models\Prices',
-        'previewPhotos' => 'Yandex\Market\Content\Models\ModelVisualPhotos',
+        'photos' => 'YandexOld\Market\Content\Models\ModelVisualPhotos',
+        'prices' => 'YandexOld\Market\Content\Models\Prices',
+        'previewPhotos' => 'YandexOld\Market\Content\Models\ModelVisualPhotos',
         // @todo Need test below properties.
-        'filters' => 'Yandex\Market\Content\Models\Filters',
-        'offers' => 'Yandex\Market\Content\Models\Offers'
+        'filters' => 'YandexOld\Market\Content\Models\Filters',
+        'offers' => 'YandexOld\Market\Content\Models\Offers'
     ];
 
     protected $propNameMap = [

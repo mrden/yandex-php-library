@@ -11,7 +11,7 @@ class PostCartRequest extends Model
     protected $cart = null;
 
     protected $mappingClasses = [
-        'cart' => 'Yandex\Market\Partner\Models\CartRequest'
+        'cart' => 'YandexOld\Market\Partner\Models\CartRequest'
     ];
 
     protected $propNameMap = [];

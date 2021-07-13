@@ -44,10 +44,10 @@ class Outlet extends Model
     protected $offer = null;
 
     protected $mappingClasses = [
-        'phone' => 'Yandex\Market\Content\Models\Phone',
-        'schedules' => 'Yandex\Market\Content\Models\Schedules',
-        'geo' => 'Yandex\Market\Content\Models\Geo',
-        'offer' => 'Yandex\Market\Content\Models\Offer'
+        'phone' => 'YandexOld\Market\Content\Models\Phone',
+        'schedules' => 'YandexOld\Market\Content\Models\Schedules',
+        'geo' => 'YandexOld\Market\Content\Models\Geo',
+        'offer' => 'YandexOld\Market\Content\Models\Offer'
     ];
 
     protected $propNameMap = [

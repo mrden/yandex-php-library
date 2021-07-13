@@ -24,8 +24,8 @@ class DeliveryOption extends Model
     protected $paymentMethods = null;
 
     protected $mappingClasses = [
-        'dates' => 'Yandex\Market\Partner\Models\DatesRange',
-        'outlets' => 'Yandex\Market\Partner\Models\Outlets'
+        'dates' => 'YandexOld\Market\Partner\Models\DatesRange',
+        'outlets' => 'YandexOld\Market\Partner\Models\Outlets'
     ];
 
     protected $propNameMap = [];

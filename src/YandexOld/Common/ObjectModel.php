@@ -13,7 +13,7 @@ namespace YandexOld\Common;
 
 /**
  * Class ObjectModel
- * @package Yandex\Common
+ * @package YandexOld\Common
  */
 class ObjectModel extends Model implements \Iterator, \Countable
 {

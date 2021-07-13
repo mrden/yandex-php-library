@@ -10,7 +10,7 @@ class ResponseModelGet extends Model
     protected $model = null;
 
     protected $mappingClasses = [
-        'model' => 'Yandex\Market\Content\Models\Base\MarketModel'
+        'model' => 'YandexOld\Market\Content\Models\Base\MarketModel'
     ];
 
     /**
@@ -21,7 +21,7 @@ class ResponseModelGet extends Model
     public function __construct($data = array())
     {
         foreach ($this->mappingClasses as $propName => &$mappingClassName) {
-            if ($mappingClassName == 'Yandex\Market\Content\Models\Base\MarketModel') {
+            if ($mappingClassName == 'YandexOld\Market\Content\Models\Base\MarketModel') {
                 $realMappingClassName = MarketModel::getInstanceClassName($data[$propName]);
                 $mappingClassName = $realMappingClassName;
             }
