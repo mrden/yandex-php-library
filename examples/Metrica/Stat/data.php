@@ -4,7 +4,7 @@
  * Date: 21.07.14 11:18
  */
 
-use Yandex\Metrica\Stat\StatClient;
+use YandexOld\Metrica\Stat\StatClient;
 
 
 $data = [];
@@ -21,12 +21,12 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
         if (isset($_GET['counter-id']) && $_GET['counter-id']) {
             $counterId = $_GET['counter-id'];
 
-            $paramsModel = new Yandex\Metrica\Stat\Models\TableParams();
-            $paramsModel->setPreset(\Yandex\Metrica\Stat\AvailableValues::PRESET_TECH_PLATFORMS)
+            $paramsModel = new YandexOld\Metrica\Stat\Models\TableParams();
+            $paramsModel->setPreset(\YandexOld\Metrica\Stat\AvailableValues::PRESET_TECH_PLATFORMS)
                 /**
                  * Список измерений, разделенных запятой
                  */
-                ->setDimensions(\Yandex\Metrica\Stat\DimensionsConst::S_BROWSER)
+                ->setDimensions(\YandexOld\Metrica\Stat\DimensionsConst::S_BROWSER)
 
                 /**
                  * Идентификатор счетчика

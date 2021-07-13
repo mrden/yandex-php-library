@@ -3,7 +3,7 @@
  * User: naxel
  * Date: 17.02.14 12:41
  */
-use Yandex\Metrica\Management\ManagementClient;
+use YandexOld\Metrica\Management\ManagementClient;
 
 $delegates = array();
 $errorMessage = false;

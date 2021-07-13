@@ -6,9 +6,9 @@
  * @created  31.01.14 18:47
  */
 
-use Yandex\SafeBrowsing\SafeBrowsingClient;
-use Yandex\SafeBrowsing\SafeBrowsingException;
-use Yandex\Common\Exception\YandexException;
+use YandexOld\SafeBrowsing\SafeBrowsingClient;
+use YandexOld\SafeBrowsing\SafeBrowsingException;
+use YandexOld\Common\Exception\YandexException;
 
 ?>
 <!doctype html>

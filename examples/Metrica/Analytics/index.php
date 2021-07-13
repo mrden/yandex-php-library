@@ -4,7 +4,7 @@
  * Date: 28.07.14 11:13
  */
 
-use Yandex\Metrica\Management\ManagementClient;
+use YandexOld\Metrica\Management\ManagementClient;
 
 $counters = array();
 $errorMessage = false;
@@ -16,14 +16,14 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
     try {
         $managementClient = new ManagementClient($_COOKIE['yaAccessToken']);
 
-        $paramsObj = new \Yandex\Metrica\Management\Models\CountersParams();
+        $paramsObj = new \YandexOld\Metrica\Management\Models\CountersParams();
         $paramsObj
             /**
              * Тип счетчика. Возможные значения:
              * simple ― счетчик создан пользователем в Метрике;
              * partner ― счетчик импортирован из РСЯ.
              */
-            ->setType(\Yandex\Metrica\Management\AvailableValues::TYPE_SIMPLE)
+            ->setType(\YandexOld\Metrica\Management\AvailableValues::TYPE_SIMPLE)
             ->setField('goals,mirrors,grants,filters,operations');
 
         /**

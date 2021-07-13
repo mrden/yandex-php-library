@@ -6,9 +6,9 @@
  * @created  07.08.13 10:32
  */
 
-use Yandex\SiteSearchPinger\SiteSearchPinger;
-use Yandex\SiteSearchPinger\Exception\SiteSearchPingerException;
-use Yandex\Common\Exception\YandexException as YandexException;
+use YandexOld\SiteSearchPinger\SiteSearchPinger;
+use YandexOld\SiteSearchPinger\Exception\SiteSearchPingerException;
+use YandexOld\Common\Exception\YandexException as YandexException;
 
 ?>
 <!doctype html>

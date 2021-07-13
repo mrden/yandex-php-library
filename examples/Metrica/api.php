@@ -4,8 +4,8 @@
  * Date: 14.02.14 15:15
  */
 
-use Yandex\Metrica\Management\ManagementClient;
-use Yandex\Metrica\Analytics\AnalyticsClient;
+use YandexOld\Metrica\Management\ManagementClient;
+use YandexOld\Metrica\Analytics\AnalyticsClient;
 
 $errorMessage = null;
 $status = 'ok';
@@ -26,7 +26,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                 case 'getCounter':
                     if (isset($_GET['counterId']) && $_GET['counterId']) {
                         //GET /management/v1/counter/{counterId}
-                        $paramsObj = new \Yandex\Metrica\Management\Models\CounterParams();
+                        $paramsObj = new \YandexOld\Metrica\Management\Models\CounterParams();
                         $paramsObj->setField('goals,mirrors,grants,filters,operations');
                         /**
                          * @see http://api.yandex.ru/metrika/doc/beta/management/counters/counter.xml
@@ -82,7 +82,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
 
                 case 'getPageViewsCount':
                     if (isset($_GET['counterId']) && $_GET['counterId']) {
-                        $paramsObj = new \Yandex\Metrica\Analytics\Models\Params();
+                        $paramsObj = new \YandexOld\Metrica\Analytics\Models\Params();
                         $paramsObj
                             ->setMetrics('ga:pageviews')
                             ->setStartDate('6daysAgo')
@@ -114,12 +114,12 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         /**
                          * @see http://api.yandex.ru/metrika/doc/ref/reference/add-counter.xml
                          */
-                        $counterPostRequest = new Yandex\Metrica\Management\Models\Counter();
+                        $counterPostRequest = new YandexOld\Metrica\Management\Models\Counter();
                         $counterPostRequest
                             ->setName($_POST['counterName'])
                             ->setSite($_POST['counterSite']);
 
-                        $codeOptions = new \Yandex\Metrica\Management\Models\CodeOptions();
+                        $codeOptions = new \YandexOld\Metrica\Management\Models\CodeOptions();
                         $codeOptions
                             ->setAsync(1)
                             ->setTrackHash(1)
@@ -145,9 +145,9 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         /**
                          * @see http://api.yandex.ru/metrika/doc/ref/reference/edit-counter.xml
                          */
-                        $params = new Yandex\Metrica\Management\Models\ExtendCounter();
+                        $params = new YandexOld\Metrica\Management\Models\ExtendCounter();
 
-                        $codeOptions = new \Yandex\Metrica\Management\Models\CodeOptions();
+                        $codeOptions = new \YandexOld\Metrica\Management\Models\CodeOptions();
                         $codeOptions
                             ->setAsync(1)
                             ->setTrackHash(0)
@@ -158,7 +158,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
 
                         $params->setCodeOptions($codeOptions);
 
-                        $webvisor = new \Yandex\Metrica\Management\Models\Webvisor();
+                        $webvisor = new \YandexOld\Metrica\Management\Models\Webvisor();
                         $webvisor
                             ->setArchEnabled(1)
                             ->setUrls('regexp:.*')
@@ -210,7 +210,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         /**
                          * @see http://api.yandex.ru/metrika/doc/beta/management/delegates/adddelegate.xml
                          */
-                        $delegateModel = new Yandex\Metrica\Management\Models\Delegate();
+                        $delegateModel = new YandexOld\Metrica\Management\Models\Delegate();
                         $delegateModel
                             ->setUserLogin($_POST['userLogin'])
                             ->setCreatedAt($_POST['createAt'])
@@ -228,7 +228,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         /**
                          * @see http://api.yandex.ru/metrika/doc/beta/management/delegates/updatedelegates.xml
                          */
-                        $delegateModel = new Yandex\Metrica\Management\Models\Delegate();
+                        $delegateModel = new YandexOld\Metrica\Management\Models\Delegate();
                         $delegateModel
                             ->setUserLogin($_POST['userLogin'])
                             ->setCreatedAt($_POST['createAt'])
@@ -287,7 +287,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                 case 'addFilter':
                     if (isset($_POST['params'], $_POST['counterId']) && $_POST['params'] && $_POST['counterId']) {
                         parse_str($_POST['params'], $params);
-                        $filterModel = new Yandex\Metrica\Management\Models\Filter((array)$params);
+                        $filterModel = new YandexOld\Metrica\Management\Models\Filter((array)$params);
 
                         //POST /management/v1/counter/{counterId}/filters
                         /**
@@ -307,7 +307,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         && $_POST['filterId']
                     ) {
                         parse_str($_POST['params'], $params);
-                        $filterModel = new Yandex\Metrica\Management\Models\Filter((array)$params);
+                        $filterModel = new YandexOld\Metrica\Management\Models\Filter((array)$params);
 
                         //PUT /management/v1/counter/{counterId}/filter/{filterId}
                         /**
@@ -351,7 +351,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         && $_POST['perm']
                     ) {
 
-                        $grantModel = new Yandex\Metrica\Management\Models\Grant();
+                        $grantModel = new YandexOld\Metrica\Management\Models\Grant();
                         $grantModel
                             ->setUserLogin($_POST['userLogin'])
                             ->setPerm($_POST['perm'])
@@ -377,7 +377,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         && $_POST['perm']
                     ) {
 
-                        $grantModel = new Yandex\Metrica\Management\Models\Grant();
+                        $grantModel = new YandexOld\Metrica\Management\Models\Grant();
                         $grantModel
                             ->setUserLogin($_POST['userLogin'])
                             ->setPerm($_POST['perm'])
@@ -425,7 +425,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         && $_POST['counterId']
                     ) {
 
-                        $operationModel = new Yandex\Metrica\Management\Models\Operation();
+                        $operationModel = new YandexOld\Metrica\Management\Models\Operation();
                         $operationModel->setAction($_POST['action'])
                             ->setAttr($_POST['attr'])
                             ->setValue($_POST['value'])
@@ -449,7 +449,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                         && $_POST['operationId']
                     ) {
 
-                        $operationModel = new Yandex\Metrica\Management\Models\Operation();
+                        $operationModel = new YandexOld\Metrica\Management\Models\Operation();
                         $operationModel
                             ->setAction($_POST['action'])
                             ->setAttr($_POST['attr'])

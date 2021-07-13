@@ -3,19 +3,19 @@ if (!isset($_REQUEST['databaseId']) || !$_REQUEST['databaseId']) {
     header('Location: index.php');
 }
 $settings = require_once '../settings.php';
-use Yandex\DataSync\DataSyncClient;
-use Yandex\Common\Exception\ForbiddenException;
-use \Yandex\DataSync\Models\Database\Delta\RecordFieldValue;
-use \Yandex\DataSync\Models\Database\Delta\RecordField;
-use \Yandex\DataSync\Models\Database\Delta\Record;
-use \Yandex\DataSync\Models\Database\Delta;
+use YandexOld\DataSync\DataSyncClient;
+use YandexOld\Common\Exception\ForbiddenException;
+use YandexOld\DataSync\Models\Database\Delta\RecordFieldValue;
+use YandexOld\DataSync\Models\Database\Delta\RecordField;
+use YandexOld\DataSync\Models\Database\Delta\Record;
+use YandexOld\DataSync\Models\Database\Delta;
 
 $errorMessage = false;
 
 // Is auth
 if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
     $dataSync   = new DataSyncClient($_COOKIE['yaAccessToken']);
-    $context    = Yandex\DataSync\DataSyncClient::CONTEXT_USER;
+    $context    = YandexOld\DataSync\DataSyncClient::CONTEXT_USER;
     $databaseId = $_REQUEST['databaseId'];
     //Устанавливаем Контекст базы данных (app или user)
     $dataSync->setContext($context);

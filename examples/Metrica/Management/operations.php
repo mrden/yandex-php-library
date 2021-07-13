@@ -4,7 +4,7 @@
  * Date: 15.07.14 18:18
  */
 
-use Yandex\Metrica\Management\ManagementClient;
+use YandexOld\Metrica\Management\ManagementClient;
 
 $operations = array();
 $errorMessage = false;

@@ -6,7 +6,7 @@
  * @created  06.11.15 16:33
  */
 
-use Yandex\Speller\SpellerClient;
+use YandexOld\Speller\SpellerClient;
 
 ?>
 <!doctype html>

@@ -8,7 +8,7 @@
 
 $settings = require_once '../../settings.php';
 
-use Yandex\OAuth\OAuthClient;
+use YandexOld\OAuth\OAuthClient;
 
 $client = new OAuthClient($settings['global']['clientId']);
 
@@ -20,9 +20,9 @@ if (isset($_COOKIE['yaAccessToken'])) {
     //$diskClient = new \Yandex\Disk\DiskClient($client->getAccessToken());
 
     // XXX: how it is now (using magic access token)
-    $diskClient = new \Yandex\Disk\DiskClient($client->getAccessToken());
+    $diskClient = new \YandexOld\Disk\DiskClient($client->getAccessToken());
 
-    $diskClient->setServiceScheme(\Yandex\Disk\DiskClient::HTTPS_SCHEME);
+    $diskClient->setServiceScheme(\YandexOld\Disk\DiskClient::HTTPS_SCHEME);
 
     header('Content-type: application/json');
     $result = $diskClient->diskSpaceInfo();

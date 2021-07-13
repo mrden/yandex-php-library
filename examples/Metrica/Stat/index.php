@@ -4,7 +4,7 @@
  * Date: 21.07.14 12:47
  */
 
-use Yandex\Metrica\Management\ManagementClient;
+use YandexOld\Metrica\Management\ManagementClient;
 
 
 $counters = [];
@@ -18,24 +18,24 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
     try {
         $managementClient = new ManagementClient($_COOKIE['yaAccessToken']);
 
-        $paramsObj = new \Yandex\Metrica\Management\Models\CountersParams();
+        $paramsObj = new \YandexOld\Metrica\Management\Models\CountersParams();
         $paramsObj
             /**
              * Тип счетчика. Возможные значения:
              * simple ― счетчик создан пользователем в Метрике;
              * partner ― счетчик импортирован из РСЯ.
              */
-            ->setType(\Yandex\Metrica\Management\AvailableValues::TYPE_SIMPLE)
+            ->setType(\YandexOld\Metrica\Management\AvailableValues::TYPE_SIMPLE)
             ->setField('goals,mirrors,grants,filters,operations');
 
         /**
          * @see http://api.yandex.ru/metrika/doc/beta/management/counters/counters.xml
          */
         $counters = $managementClient->counters()->getCounters($paramsObj)->getCounters();
-    } catch (\Yandex\Common\Exception\UnauthorizedException $ex) {
+    } catch (\YandexOld\Common\Exception\UnauthorizedException $ex) {
         $errorMessage = '<p>Недействительный токен. Вам необходимо '
             . '<a href="' . rtrim(str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__), "/") . '/../OAuth/' . '">авторизироваться</a> и повторить попытку.</p>';
-    } catch (\Yandex\Common\Exception\ForbiddenException $ex) {
+    } catch (\YandexOld\Common\Exception\ForbiddenException $ex) {
         $errorMessage = '<p>Возможно, у приложения нет прав на доступ к ресурсу. Попробуйте '
             . '<a href="' . rtrim(str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__), "/") . '/../OAuth/' . '">авторизироваться</a> и повторить.</p>';
     } catch (\Exception $ex) {

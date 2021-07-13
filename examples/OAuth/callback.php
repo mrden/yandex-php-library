@@ -28,7 +28,7 @@ session_start();
         </p>
 
         <?php
-        use Yandex\OAuth\OAuthClient;
+        use YandexOld\OAuth\OAuthClient;
 
         $client = new OAuthClient($settings['global']['clientId'], $settings['global']['clientSecret']);
 
@@ -51,7 +51,7 @@ session_start();
 
             try {
                 $client->requestAccessToken($_REQUEST['code']);
-            } catch (\Yandex\OAuth\Exception\AuthRequestException $ex) {
+            } catch (\YandexOld\OAuth\Exception\AuthRequestException $ex) {
                 echo '<p class="text-danger">' . $ex->getMessage() . '</p>';
             }
 

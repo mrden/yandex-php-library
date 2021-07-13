@@ -16,8 +16,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Yandex": "src/",
-            "Yandex\\Tests": "tests/"
+            "YandexOld": "src/",
+            "YandexOld\\Tests": "tests/"
         }
     },
     "authors": [

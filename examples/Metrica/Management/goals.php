@@ -3,7 +3,7 @@
  * User: naxel
  * Date: 17.02.14 11:29
  */
-use Yandex\Metrica\Management\ManagementClient;
+use YandexOld\Metrica\Management\ManagementClient;
 
 $goals = array();
 $errorMessage = false;

@@ -1,7 +1,7 @@
 <?php
 $settings = require_once '../settings.php';
-use Yandex\Market\Partner\PartnerClient;
-use Yandex\Common\Exception\ForbiddenException;
+use YandexOld\Market\Partner\PartnerClient;
+use YandexOld\Common\Exception\ForbiddenException;
 
 $errorMessage = false;
 $order = null;
@@ -26,7 +26,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])
                 $market->setOrderStatus($_GET['orderId'], $_GET['status']);
             }
         }
-        /** @var Yandex\Market\Models\Order $orders */
+        /** @var YandexOld\Market\Models\Order $orders */
         $order = $market->getOrder($_GET['orderId']);
     } catch (ForbiddenException $ex) {
         $errorMessage = $ex->getMessage();
@@ -170,7 +170,7 @@ if (!isset($_GET['campaignId']) || !$_GET['campaignId'] || !isset($_GET['orderId
         <h3>Товары:</h3>
         <?php
         if ($order->getItems() instanceof Traversable) {
-            /** @var Yandex\Market\Models\Item $item */
+            /** @var YandexOld\Market\Models\Item $item */
             foreach ($order->getItems() as $item) {
                 ?>
                 <p>

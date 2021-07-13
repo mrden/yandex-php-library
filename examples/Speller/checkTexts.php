@@ -7,7 +7,7 @@
  */
 $settings = require_once '../settings.php';
 
-use Yandex\Speller\SpellerClient;
+use YandexOld\Speller\SpellerClient;
 
 ?>
 <!doctype html>

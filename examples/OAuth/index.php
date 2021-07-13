@@ -12,7 +12,7 @@ if (isset($_REQUEST['back'])) {
 }
 
 
-use Yandex\OAuth\OAuthClient;
+use YandexOld\OAuth\OAuthClient;
 
 // Client secret is not required in this case
 $client = new OAuthClient($settings['global']['clientId']);

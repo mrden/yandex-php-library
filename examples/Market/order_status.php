@@ -1,6 +1,6 @@
 <?php
 $settings = require_once '../settings.php';
-use Yandex\Market\Partner\PartnerClient;
+use YandexOld\Market\Partner\PartnerClient;
 
 $json = file_get_contents("php://input");
 $debug = false;
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $debug) {
 
     //Передача заказа и запрос на принятие заказа
     //Get
-    $postOrderStatus = new \Yandex\Market\Models\PostOrderStatus();
+    $postOrderStatus = new \YandexOld\Market\Models\PostOrderStatus();
     $postOrderStatus->fromJson($json);
     $status = $postOrderStatus->getOrder()->getStatus();
     $subStatus = $postOrderStatus->getOrder()->getSubstatus();

@@ -4,7 +4,7 @@
  * Date: 28.07.14 13:32
  */
 
-use Yandex\Metrica\Analytics\AnalyticsClient;
+use YandexOld\Metrica\Analytics\AnalyticsClient;
 
 $data = array();
 $errorMessage = false;
@@ -19,7 +19,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
         if (isset($_GET['counter-id']) && $_GET['counter-id']) {
             $counterId = $_GET['counter-id'];
 
-            $paramsObj = new \Yandex\Metrica\Analytics\Models\Params();
+            $paramsObj = new \YandexOld\Metrica\Analytics\Models\Params();
             $paramsObj
                 /**
                  * Метрики позволяют получать данные о статистике посещаемости и активности пользователей сайта.
@@ -27,7 +27,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                  * то API вернет общее значение метрики для выбранного временного интервала
                  * без разделения его на какие-либо группы
                  */
-                ->setMetrics(\Yandex\Metrica\Analytics\MetricConst::GA_PAGE_VIEWS)
+                ->setMetrics(\YandexOld\Metrica\Analytics\MetricConst::GA_PAGE_VIEWS)
 
                 /**
                  * Дата начала отчетного периода
@@ -47,7 +47,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                 /**
                  * Измерения группируют данные по критериям
                  */
-                ->setDimensions(\Yandex\Metrica\Analytics\DimensionsConst::GA_COUNTRY);
+                ->setDimensions(\YandexOld\Metrica\Analytics\DimensionsConst::GA_COUNTRY);
 
             $analyticsClient = new AnalyticsClient($_COOKIE['yaAccessToken']);
 

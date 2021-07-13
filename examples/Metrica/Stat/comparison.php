@@ -4,7 +4,7 @@
  * Date: 21.07.14 16:38
  */
 
-use Yandex\Metrica\Stat\StatClient;
+use YandexOld\Metrica\Stat\StatClient;
 
 $data = [];
 $errorMessage = false;
@@ -19,8 +19,8 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
         if (isset($_GET['counter-id']) && $_GET['counter-id']) {
             $counterId = $_GET['counter-id'];
 
-            $paramsModel = new Yandex\Metrica\Stat\Models\ComparisonParams();
-            $paramsModel->setMetrics(\Yandex\Metrica\Stat\MetricConst::S_USERS)
+            $paramsModel = new YandexOld\Metrica\Stat\Models\ComparisonParams();
+            $paramsModel->setMetrics(\YandexOld\Metrica\Stat\MetricConst::S_USERS)
                 /**
                  * Идентификатор счетчика
                  */
@@ -29,7 +29,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                 /**
                  * Список измерений, разделенных запятой
                  */
-                ->setDimensions(\Yandex\Metrica\Stat\DimensionsConst::S_TRAFFIC_SOURCE)
+                ->setDimensions(\YandexOld\Metrica\Stat\DimensionsConst::S_TRAFFIC_SOURCE)
 
                 /**
                  * Фильтр сегментации для сегмента A

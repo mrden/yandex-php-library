@@ -14,7 +14,7 @@ $phar->addFile('LICENSE');
 $phar->addFile('README.md');
 
 require_once dirname(__FILE__) . '/vendor/autoload.php';
-use Yandex\Disk\DiskClient;
+use YandexOld\Disk\DiskClient;
 
 $disk = new DiskClient();
 $disk->setAccessToken(getenv('ACCESS_TOKEN'));

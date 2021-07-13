@@ -1,7 +1,7 @@
 <?php
 $settings = require_once '../settings.php';
-use Yandex\Market\Partner\PartnerClient;
-use Yandex\Common\Exception\ForbiddenException;
+use YandexOld\Market\Partner\PartnerClient;
+use YandexOld\Common\Exception\ForbiddenException;
 
 $errorMessage = false;
 
@@ -68,7 +68,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
 
         <h3>Ответ:</h3>
             <?php
-            /** @var \Yandex\Market\Models\Campaign $campaign */
+            /** @var \YandexOld\Market\Models\Campaign $campaign */
             if ($campaigns instanceof Traversable) {
 
                 $params = [
@@ -113,7 +113,7 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                             <div class="panel-body">
                                 <?php
                                 if ($orders instanceof Traversable) {
-                                    /** @var Yandex\Market\Models\Order $order */
+                                    /** @var YandexOld\Market\Models\Order $order */
                                     foreach ($orders as $order) {
                                         ?>
                                         <p>

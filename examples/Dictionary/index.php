@@ -1,8 +1,8 @@
 <?php
 $settings = require_once '../settings.php';
-use Yandex\Dictionary\DictionaryClient;
-use Yandex\Common\Exception\ForbiddenException;
-use Yandex\Dictionary\Exception\DictionaryException;
+use YandexOld\Dictionary\DictionaryClient;
+use YandexOld\Common\Exception\ForbiddenException;
+use YandexOld\Dictionary\Exception\DictionaryException;
 
 $errorMessage = false;
 
@@ -25,10 +25,10 @@ if (isset($_COOKIE['yaAccessToken']) && isset($_COOKIE['yaClientId'])) {
                 ->setTranslateTo($to);
             $result = $dictionaryClient->lookup($_POST['word']);
             if ($result) {
-                /** @var \Yandex\Dictionary\DictionaryDefinition $dictionaryDefinition */
+                /** @var \YandexOld\Dictionary\DictionaryDefinition $dictionaryDefinition */
                 $dictionaryDefinition  = $result[0];
                 $dictionaryTranslation = $dictionaryDefinition->getTranslations();
-                /** @var \Yandex\Dictionary\DictionaryTranslation $dictionaryTranslation */
+                /** @var \YandexOld\Dictionary\DictionaryTranslation $dictionaryTranslation */
                 $dictionaryTranslation = $dictionaryDefinition->getTranslations()[0];
                 $word                  = $dictionaryTranslation->getText();
             }

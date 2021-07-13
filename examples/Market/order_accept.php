@@ -1,6 +1,6 @@
 <?php
 $settings = require_once '../settings.php';
-use Yandex\Market\Partner\PartnerClient;
+use YandexOld\Market\Partner\PartnerClient;
 
 $json = file_get_contents("php://input");
 $debug = false;
@@ -16,13 +16,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $debug) {
 
     //Передача заказа и запрос на принятие заказа
     //Get
-    $postOrderAccept = new \Yandex\Market\Models\PostOrderAccept();
+    $postOrderAccept = new \YandexOld\Market\Models\PostOrderAccept();
     $postOrderAccept->fromJson($json);
 
     //Ответ магазина на запрос от Яндекс.Маркета
-    $postOrderAcceptResponse = new \Yandex\Market\Models\PostOrderAcceptResponse();
+    $postOrderAcceptResponse = new \YandexOld\Market\Models\PostOrderAcceptResponse();
     //Заказ
-    $acceptOrder = new \Yandex\Market\Models\AcceptOrder();
+    $acceptOrder = new \YandexOld\Market\Models\AcceptOrder();
     //Идентификатор заказа, присвоенный магазином. Указывается, если заказ принят.
     $id = rand(1000, 10000);
     if ($id % 2 === 0) {

@@ -60,12 +60,13 @@ $ curl -s https://getcomposer.org/installer | php
 3. Используем!
 
 Пример подключения и работа с библиотекой из phar-архива:
+
 ```php
 <?php
 //Подключаем autoload.php из phar-архива
 require_once 'phar://yandex-php-library_master.phar/vendor/autoload.php';
 
-use Yandex\Disk\DiskClient;
+use YandexOld\Disk\DiskClient;
 
 $disk = new DiskClient();
 //Устанавливаем полученный токен

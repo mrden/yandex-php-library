@@ -8,10 +8,10 @@
 ini_set('memory_limit', '256M');
 set_time_limit(300);
 
-use Yandex\Common\Exception\YandexException;
-use Yandex\SafeBrowsing\Adapter\RedisAdapter;
-use Yandex\SafeBrowsing\SafeBrowsingClient;
-use Yandex\SafeBrowsing\SafeBrowsingException;
+use YandexOld\Common\Exception\YandexException;
+use YandexOld\SafeBrowsing\Adapter\RedisAdapter;
+use YandexOld\SafeBrowsing\SafeBrowsingClient;
+use YandexOld\SafeBrowsing\SafeBrowsingException;
 
 ?>
 <!doctype html>

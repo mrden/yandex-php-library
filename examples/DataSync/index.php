@@ -1,7 +1,7 @@
 <?php
 $settings = require_once '../settings.php';
-use Yandex\DataSync\DataSyncClient;
-use Yandex\Common\Exception\ForbiddenException;
+use YandexOld\DataSync\DataSyncClient;
+use YandexOld\Common\Exception\ForbiddenException;
 
 $errorMessage = false;
 
